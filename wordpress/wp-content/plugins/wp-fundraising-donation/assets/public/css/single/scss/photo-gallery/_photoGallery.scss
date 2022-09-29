@@ -1,0 +1,54 @@
+.wfp-portfolio-gallery {
+    padding-left: 0;
+
+    margin: {
+        left: 0;
+        bottom: 0;
+    }
+
+    display: flex;
+    justify-content: space-between;
+
+    >li {
+        list-style: none;
+        width: max-content;
+        display: inline-block;
+
+        &:not(:last-child) {
+            padding: {
+                right: 15px;
+            }
+        }
+
+        >a {
+            display: block;
+            img{
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+.wfp-single-item {
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.wfp-post-image {
+    margin-bottom: 15px;
+    text-align: center;
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .featured-video {
+        >iframe {
+            display: block;
+        }
+    }
+}
+
+.wfp-entry-thumbnail {
+    margin-bottom: 37px;
+}

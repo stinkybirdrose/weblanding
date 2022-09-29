@@ -1,0 +1,245 @@
+section.wfp-dashboard{
+	/*Dashboard Campaingn Step forms*/
+	.wfp-campaign-content{
+		#wfp_regForm{
+			 display: inline-block;
+			 width: 100%;
+			.search-tab {
+				 width: 100%;
+			 }
+			 .xs-money-symbol-before{
+				background-color: #F7F8FC;
+				border: none;
+				height: 35px;
+
+				& + .wfp-input {
+					border-top-left-radius: 0;
+					border-bottom-left-radius: 0;
+				}
+			 }
+			.wfp-input {
+				background-color: #F7F8FC;
+				border-radius: 5px;
+				color: #666666;
+				font-size: 14px;
+				padding: 5px 10px;
+				border: none;
+				height: 35px;
+				width: 100%;
+				box-sizing: border-box;
+
+				&.wfp-textarea{
+					height: auto;
+				}
+			}
+
+			.label-info{
+				vertical-align: middle;
+				color: #aaaaaa;
+				font-size: 12px;
+				font-style: italic;
+			}
+
+			.xs-money-symbol-before-input{
+				width: calc(100% - 36px);
+			}
+			
+			.wfp-textarea{
+				height: auto;	
+			}
+
+			.wfp-invalid {
+			  background-color: $invalid;
+			}
+
+			.select2-container--default {
+				.select2-selection--single {
+					background-color: #F7F8FC;
+					border-radius: 5px;
+					border: none;
+					height: 32px;
+				}
+				.select2-selection__rendered{
+					line-height: 30px;
+					padding-left: 10px;
+					color: #666666;
+					font-size: 14px;
+				}
+			}
+			
+			.wfp-tabs-control{
+				background-color: #fff;
+				margin-top: 30px;
+				padding: 40px;
+				border-radius: 5px;
+				box-shadow: 0 1px 6px rgba(204, 204, 204, .6);
+				.image-box{
+					position: relative;
+					&--inputs {
+						background-color: #F7F8FC;
+						border-radius: 5px;
+						position: relative;
+						display: block;
+						overflow: hidden;
+						padding-top: 7px;
+						padding-bottom: 4px;
+					}
+					label {
+						color: #324AFF;
+						font-size: 14px;
+						display: inline-block;
+						padding: 2px 15px;
+						margin: 0;
+						padding-bottom: 7px;
+					}
+				}
+				label{
+					font-weight: 500;
+					display: block;
+					margin: 0;
+					color: #666666;
+					font-size: 14px;
+					-webkit-box-sizing: border-box;
+					box-sizing: border-box;
+					padding: 0;
+					margin-bottom: 5px;
+				}
+				.wfp-tab{
+					display: none;
+					.intro-info{
+						margin-bottom: 15px;
+						box-sizing: border-box;
+
+						.xs-donate-field-wrap {
+							> div {
+								box-sizing: border-box;
+							}
+						}
+					}
+					&.active {
+					  display: block;
+					  padding-right: 0;
+					  border: none;
+					}
+				}
+			}
+			.mce-top-part::before{
+				box-shadow: none;
+			}
+			.mce-toolbar-grp {
+				background-color: #F7F8FC;
+			}
+			.quicktags-toolbar {
+				background-color: #F7F8FC;
+			}
+			.wp-editor-area{
+				background-color: #F7F8FC;
+			}
+			.xs-donate-row-head {
+				> h2 {
+					margin: 0;
+					font-size: 20px;
+					padding: 6px 10px;
+					&:before {
+						display: none;
+					}
+				}
+			}
+			.xs-pledge-btnRemove{
+				.dashicons-no:before {
+					position: relative;
+					left: 1px;
+					top: 3px;
+				}
+			}
+			.xs-donate-visible {
+				margin-top: 16px;
+			}
+			.wfp-section-title {
+				margin-bottom: 10px;
+				font-weight: 600;
+				font-size: 16px;
+			}
+			.wfp-tab-step-control{
+				.wfp-step {
+					margin: 0 2px;
+					background-color: $primary;
+					border: none;
+					@include border-radius(5px);
+					display: inline-block;
+					opacity: 0.5;
+					font-style: normal;
+					font-weight: initial;
+					text-transform: capitalize;
+					font-size: 14px;
+					padding: 14px 21px;
+					font-weight: 500;
+					margin-bottom: 10px;
+				}
+				.wfp-step.active {
+				  opacity: 1;
+				}
+				.wfp-step.finish {
+				  background-color: $finish;
+				}
+			}
+			
+			/*form bottom*/
+			.wfp-form-fotter{
+				display: block;
+				overflow: hidden;
+				margin-top: 30px;
+				  
+				  button.wfp-form-button {
+					  background-color: $primary;
+					  color: $white;
+					  border: none;
+					  font-size: 13px;
+					  cursor: pointer;
+					  font-style: normal;
+					  font-weight: initial;
+					  text-transform: capitalize;
+					  border: none;
+					  @include border-radius(5px);
+					  &:focus{
+						  box-shadow: none;
+						  border: none;
+					  }
+					}
+
+					button.wfp-form-button:hover {
+					  opacity: 0.8;
+					}
+					
+					.wfp-form-button.wfp-preview{ 
+						background-color: $preview;
+						display: none;
+						&.open{
+						  display:inline;
+						}
+					}
+					.wfp-form-button.wfp-next{
+
+						&.finish{
+							background-color: $finish;
+						}
+						&.disabled{
+							position: relative;
+						}
+						&.disabled:before{
+							content: "";
+							position: absolute;
+							top: 0;
+							left: 0px;
+							width: 100%;
+							height: 100%;
+							cursor: no-drop;
+							background: $disabled;
+							z-index: 1;
+							@include border-radius(10px);
+						}
+					}
+			}
+		}
+	}
+}

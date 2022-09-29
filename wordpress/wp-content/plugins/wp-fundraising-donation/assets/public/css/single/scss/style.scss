@@ -1,0 +1,54 @@
+.wfp-container{
+    margin: 0 auto;
+}
+
+.wfp-container.xs-wfp-donation {
+    max-width: 800px;
+    padding: 100px 0;
+}
+
+.wfp-container.xs-wfp-crowd{
+    max-width: 1140px;
+    padding: 0;
+}
+
+.wfp-view{
+    // Variable
+    @import 'variable/variable';
+
+    /*--- Genarel ---*/
+    @import 'genarel/genarel';
+
+    /*--- Photo Gallery ---*/
+    @import 'photo-gallery/photoGallery';
+
+    /*--- Header ---*/
+    @import 'header/header';
+
+    /*--- Goal ---*/
+    @import 'goal/goal';
+
+    /*--- Social ---*/
+    @import 'social/social';
+
+    /*--- Campaign User ---*/
+    @import 'campaign-user/campaignUser';
+
+    /*--- Input ---*/
+    @import 'input/input';
+
+    /*--- Short Berif ---*/
+    @import 'short-berif/shortBerif';
+
+    /*--- Tab ---*/
+    @import 'tab/tab';
+
+    /*--- post Description ---*/
+    @import 'post-description/postDescription';
+
+    /*--- pledge ---*/
+    @import 'pledge/pledge';
+
+    /*--- Review ---*/
+    @import 'review/review';
+}

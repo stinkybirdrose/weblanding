@@ -1,0 +1,26 @@
+.wfp-view {
+    // variable
+    @import 'variable/variable';
+
+    /*-- Modal --*/
+    @import 'modal/modal';
+
+    /* Input */
+    @import 'input/input';
+
+    /*-- Button --*/
+    @import 'button/button';
+
+    /*-- Select 2 --*/
+    @import 'select-2/select_2';
+
+    /*-- Badge --*/
+    @import 'bdage/_badge';
+
+    /*-- Donate --*/
+    @import 'donate/_donate';
+}
+
+body.wfdp-single-modal-opened{
+    overflow-y: hidden;
+}

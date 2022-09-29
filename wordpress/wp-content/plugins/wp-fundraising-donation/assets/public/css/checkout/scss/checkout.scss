@@ -1,0 +1,13 @@
+.wfp-view{
+    /*-- General --*/
+    @import 'general';
+
+    /*-- Order Form --*/
+    @import 'order-form/_orderForm';
+
+    /*-- Title --*/
+    @import 'title/title';
+
+    /*-- Payment Details --*/
+    @import 'payment-details/paymentDetails';
+}

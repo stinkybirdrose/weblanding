@@ -1,0 +1,192 @@
+.my-campaign{
+    .wfp-separator{
+        padding: 0; 
+        text-align: center;
+    }
+    .wfp-search-tab-wraper  {
+        justify-content: flex-end;
+        .search-tab{
+            align-self: flex-end;
+            flex: unset;
+            margin-right: 10px;
+            > input {
+                box-sizing: border-box;
+                font-size: 16px;
+            }
+        }
+        .button-primary {
+            color: white;
+            padding: 0 17px;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+    }
+
+    .rasied-amount-overview{
+        &.rewards-content{
+            display: flex;
+            justify-content: space-between;
+        }
+       
+        .intro-info{
+            background: #e36cd9; /* Old browsers */
+            background: -moz-linear-gradient(-45deg,  #e36cd9 0%, #9a56ff 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(-45deg,  #e36cd9 0%,#9a56ff 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(135deg,  #e36cd9 0%,#9a56ff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e36cd9', endColorstr='#9a56ff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+            padding: 30px;
+            &--title{
+                color:#ffffff;
+                font-size: 14px;
+                line-height: 23px;
+                margin: 0;
+            }
+            &--price {
+                color: #fff;
+                font-size: 28px;
+                line-height: 23px;
+                margin: 0;
+            }
+            
+
+            &.rewards-block{
+                margin-right: 15px;
+                flex: 1;
+                &:before {
+                    background-image: url(./../../../../assets/public/images/meter.png);
+                    width: 86px;
+                    height: 60px;
+                }
+                &:nth-child(2){
+                    background: #43e794; /* Old browsers */
+                    background: -moz-linear-gradient(-45deg,  #43e794 0%, #23bdb8 100%); /* FF3.6-15 */
+                    background: -webkit-linear-gradient(-45deg,  #43e794 0%,#23bdb8 100%); /* Chrome10-25,Safari5.1-6 */
+                    background: linear-gradient(135deg,  #43e794 0%,#23bdb8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#43e794', endColorstr='#23bdb8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+                    &:before {
+                        background-image: url(./../../../../assets/public/images/rewards-flower.png);
+                        width: 76px;
+                        height: 90px;
+                    }
+                }
+                &:last-of-type{
+                    margin-right: 0;
+                    background: #ffb8aa; /* Old browsers */
+                    background: -moz-linear-gradient(-45deg,  #ffb8aa 0%, #ff65bd 100%); /* FF3.6-15 */
+                    background: -webkit-linear-gradient(-45deg,  #ffb8aa 0%,#ff65bd 100%); /* Chrome10-25,Safari5.1-6 */
+                    background: linear-gradient(135deg,  #ffb8aa 0%,#ff65bd 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb8aa', endColorstr='#ff65bd',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+                    &:before {
+                        background-image: url(./../../../../assets/public/images/resize.png);
+                        width: 60px;
+                        height: 60px;
+                    }
+                }
+            }
+           
+        }
+    }
+
+    .wfp-current-balance {
+        &--title {
+            color: #333333;
+            font-size: 14px;
+            font-weight: 600;
+            margin: 0;
+        }
+        &--price {
+            color: #324aff;
+            font-size: 28px;
+            line-height: 23px;
+            margin: 0;
+        }
+    }
+
+    .wfp-my-campaign-full-width {
+        &.profile-content{
+            .profile-section{
+                .profile-block {
+                    flex: 1;
+                }
+            }
+        }
+    }
+
+    .profile-content{
+        &.wfp-my-campaign-list {
+            margin-top: 30px;
+            .profile-section{
+                .profile-block {
+                    flex: 1;
+                    padding: 30px;
+                    padding-top: 0;
+                }
+            }
+            .campaign-body {
+                padding-top: 10px;
+            }
+            .wfp-campaign-list {
+                border-radius: 8px;
+                &--link {
+                    color: #333333;
+                    font-size: 13px;
+                    line-height: 33px;
+                    font-weight: 500;
+                    text-decoration: none;
+                    box-shadow: none;
+                }
+                .wfp-report-table {
+                    margin: 0;
+                    width: 100%;
+
+                    th,
+                    td {
+                        border-right: 1px solid rgba(0,0,0,.1);
+                        border-bottom: 1px solid rgba(0,0,0,.1);
+                    }
+
+                    tr:last-child {
+                        td{
+                            &:last-child{
+                                border-right: 0;
+                            }
+                            border-bottom: 0;
+                        }
+                    }
+                    
+                    thead{
+                        th {
+                            font-weight: 600;
+                            color: #324aff;
+                            color: #999999;
+                            font-size: 13px;
+                            line-height: 33px;
+                            padding: 2px 20px;
+                            font-weight: 400;
+                            border-color: rgba(0,0,0,.1);
+                            &:last-child {
+                                border-right: 0;
+                                text-align: right;
+                            }
+                        }
+                    }
+                    tbody{
+                        td{
+                            padding: 2px 20px;
+                            border-color: rgba(0,0,0,.1);
+                            &.name{
+                                text-align: center;
+                            }
+                            &:last-child {
+                                border-right: 0;
+                                text-align: right;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}

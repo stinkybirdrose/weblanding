@@ -1,0 +1,296 @@
+.wfp-login{
+	display: block;
+	width: 100%;
+	max-width: 470px;
+	margin: 0px auto;
+	background-color: #f7f9fb;
+	.wfp-login-content,
+	.wfp-register-content{
+		min-height: 414px;
+	}
+	.wfp-login-form-container{
+		padding: 60px;
+		position: relative;
+		padding-top: 80px;
+
+		&:before {
+			content: "";
+			background-image: url(./../../../../assets/public/images/dashboard-logo.png);
+			width: 100px;
+			height: 100px;
+			display: inline-block;
+			position: absolute;
+			z-index: 1;
+			top: -50px;
+			left: 50%;
+			transform: translateX(-50%);
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+	}
+	.wfp-login-heading{
+		text-align: center;
+		margin-bottom: 35px;
+		&--main{
+			color: #324aff;
+			font-size: 28px;
+			font-weight: 500;
+			margin: 0;
+			&:before {
+				display: none;
+			}
+		}
+		&--sub{
+			color: #666666;
+			font-size: 15px;
+			font-weight: 600;
+			margin: 0;
+			padding: 0;
+		}
+	}
+	.section-content {
+
+		.wfp-LostPassword{
+			text-align: center;
+			&--link {
+				color: #999999;
+				font-size: 15px;
+				text-decoration: none;
+				box-shadow: none;
+			}
+		}
+
+		.wfp-from-group{
+			align-items: center;
+			background-color: #FFFFFF;
+			border: 1px solid #F0F0F0;
+			margin-bottom: 15px;
+			text-align: center;
+			margin-left: 0;
+			margin-right: 0;
+			> div{
+				padding: 0;
+			}
+			
+			&--icon{
+				color: #3A4FFF;
+			}
+			&--password{
+				&__icon{
+					color: #D7DCFF;
+					cursor: pointer;
+					position: absolute;
+					right: 30px;
+					top: 50%;
+					transform: translateY(-50%);
+					font-size: 18px;
+					&.viewed{
+						color: #3A4FFF;
+					}
+				}
+			}
+			&.wfp-remember-me-container{
+				background-color: transparent;
+				text-align: left;
+				border: none;
+
+				.wfp-button{
+					width: 100%;
+					border-radius: 0;
+					display: block;
+					padding: 20px 30px;
+				}
+
+				.wfp-rememberme{
+					display: block;
+					margin-bottom: 23px;
+					margin-left: 24px;
+					&--label{
+						color: #999999;
+						font-size: 15px;
+						position:relative;
+						&:before {
+							color: #324AFF;
+							margin-right: 10px;
+							font-family: 'wp-fundraising'
+						}
+					}
+					&--checkbox{
+						display: none;
+						& + .wfp-rememberme--label{
+							&:before {
+								content: "";
+								height: 15px;
+								width: 15px;
+								border: 2px solid #324AFF;
+								display: inline-block;
+								top: 2px;
+								position: relative;
+							}
+						}
+						&:checked + .wfp-rememberme--label{
+							&:after {
+							content: "\e949";
+							font-family: 'wp-fundraising';
+							color: #324AFF;
+							position: absolute;
+							left: 2px;
+							font-size: 12px;
+							top: 0px;
+							font-weight: bold;
+							}
+						}
+					}
+				}
+			}
+			
+			.wfp-input{
+				border: none;
+				background-color:transparent;
+				outline: none;
+				height: 58px;
+				color: #3A4FFF;
+				font-size: 15px;
+				font-weight: 400;
+				&::placeholder {
+					color: #adb6ff;
+				}
+
+			}
+		}
+	
+		&.wfp-tab-control{
+			display:block;
+			&.wfp-reg-login-navs{
+				display: flex;
+				width: 100%;
+				.wfp-reg-login-navs--icon{
+					margin-right: 8px;
+				}
+				.wfp-button{
+					flex: 1;
+					background-color: #fff;
+					border-radius: 0;
+					color: #999999;
+					font-size: 15px;
+					border: 1px solid #F0F0F0;
+					outline: none;
+					box-shadow: none;
+					padding: 25px 10px;
+					&:focus{
+						outline: none;
+					}
+					&:active{
+						outline: none;
+						box-shadow: none;
+					}
+					&-active{
+						color: #324aff;
+					}
+	
+				}
+			}
+			.wfp-button{
+				width: 49%;
+				background: transparent;
+				color: #fff;
+				display: inline-block;
+				&.wfp-login-btn{
+					border-right: 1px solid #fff;
+				}
+			}
+		}
+	}
+	
+}
+
+
+/*CSS for Login registration modal from short-code*/
+.login-register-pup-up-wrapper {
+	position: fixed;
+    background-color: transparent;
+    display: block;
+    z-index: 999999;
+    padding: 0px;
+    overflow: auto;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .4s;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+	max-width: 100%;
+	
+	&.is-open + .wfp-modal-backdrop.is-open {
+		display: block;
+		z-index: 99999;
+	}
+
+	&.wfdp-single-bigger{
+		.wfp-login {
+			top: 0px;
+			margin: 50px auto;
+			transform: inherit;
+		}
+	}
+
+	.xs-modal-content {
+		margin: 0;
+	}
+	.xs-modal-header{
+		border: none;
+		padding: 0;
+	}
+	.xs-auth-modal--close {
+		background-color: #324aff;
+		position: absolute;
+		top: -20px;
+		right: -20px;
+		z-index: 1;
+		width: 42px;
+		box-sizing: border-box;
+		padding: 0;
+		height: 42px;
+		border-radius: 100px;
+		text-align: center;
+	}
+	.wfp-login{
+		position: absolute;
+		background-color: transparent;
+		left: 0;
+		right: 0;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+}
+.wfp-auth-btn{
+	background-color: #324aff;
+	&:hover{
+		background-color: #324aff;
+	}
+}
+.login-register-pup-up-wrapper.xs-show {
+    opacity: 1;
+    visibility: visible;
+}
+.xs-modal-content {
+    position: relative;
+    width: 600px;
+    max-width: 100%;
+    
+    padding: 15px;
+    height: auto;
+}
+/*css by AR :P , please do not scold me*/
+.xs-modal-popup.is-open {
+    opacity: 1;
+    visibility: visible;
+}
+.xs-auth-show {
+    display: block;
+}
+.xs-auth-hide {
+    display: none;
+}

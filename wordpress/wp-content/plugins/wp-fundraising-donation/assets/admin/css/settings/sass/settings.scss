@@ -1,0 +1,453 @@
+body.wfdp-modal-opened{
+    overflow: hidden;
+}
+.wp-fundraising_page_settings {
+    & .wfdp-donation-reports {
+        .nav-tab{
+            display: inline-block;
+            float: none;
+            margin-left: 0px;
+            border-bottom: 0;
+            z-index: 1;
+            position: relative;
+            margin-bottom: -1px;
+            border-color: transparent;
+            background-color: transparent;
+            padding: 7px 15px;
+            outline: none;
+
+            &:focus {
+                outline: none;
+                box-shadow: none;
+            }
+        }
+        .setting-nav-wrapper{
+            border-bottom: none;
+            margin-top: 0;
+            padding: 40px;
+            background-color: #FDFDFF;
+            -webkit-box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.04);
+            box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.04);
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            padding-bottom: 0;
+        }
+
+        .nav-tab-wrapper{
+            border-color: #324aff;
+            & > .nav-tab-active{
+                background-color: #FDFDFF;
+                color: #324aff;
+                border-color: #324aff;
+                margin-left: 0;
+                border-bottom: none;
+            }
+        }
+
+        .wfdp-payment-section{
+            padding: 40px;
+            background-color: #FDFDFF;
+            -webkit-box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.04);
+            box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.04);
+            box-sizing: border-box;
+            overflow: hidden;
+            &.wfp-disabled{
+                position: relative;
+                &:before{
+                    content: "";
+                    background-color: rgba(204, 204, 204, .5);
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    z-index: 1;
+                }
+            }
+        }
+    }
+
+    .wfdp-payment-headding {
+        margin-bottom: 35px;
+        h2{
+            font-size: 23px;
+            color: #23282d;
+            font-weight: 500;
+            margin: 0;
+        }
+    }
+
+    .wfdp-payment-section-page-option {
+        .wfdp-payment-gateway{
+            .wfdp-social-label{
+                vertical-align: top;
+                padding-top: 12px;
+            }
+
+            
+        }
+    }
+
+    .wfdp-payment-gateway{
+        .payment-gateway-info{
+            .regular-text{
+                height: 44px;
+                border-radius: 0;
+                box-shadow: none;
+            }
+        }
+        .xs-backdrop.is-open{
+            background-color: rgba(241, 241, 241, .5);
+        }
+        .wfdp-payment-inputs-container{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: start;
+            .wfdp-social_share {
+                flex: 1;
+                margin-right: 50px;
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+        .wfdp-social-input-container{
+            padding-bottom: 27px;
+            &.wfdp-social-no-border{
+                border-bottom: 0;
+            }
+            &:last-of-type{
+                border: none;
+            }
+            .wp-color-result.button{
+                margin-bottom: 0;
+            }
+            .wfdp-social-switch {
+                display: inline-block;
+                vertical-align: top;
+            }
+        }
+        .wfdp-social-textarea{
+            .wfdp-social-label{
+                vertical-align: top;
+                margin-top: 32px;
+            }
+        }
+        .wfdp-social-label{
+            display: inline-block;
+            color: #444444;
+            font-size: 13px;
+            font-weight: 600;
+            width: 200px;
+            vertical-align: middle;
+        }
+
+        
+
+        .wfdp-social-input {
+            width: calc(100% - 204px);
+            display: inline-block;
+            vertical-align: middle;
+            box-sizing: border-box;
+
+            .wfdp-social-input-split {
+                display: flex;
+                width: 50%;
+                justify-content: center;
+                .xs-donate-field-wrap {
+                    margin: 0;
+                    .xs-donate-field-short-code {
+                        display: flex;
+                        width: 100%;
+                        .donate_text_filed {
+                            flex: 1;
+                            height: 40px;
+                            border: none;
+                            box-shadow: none;
+                            padding: 10px;
+                            margin: 0;
+                        }
+                        .xs_copy_button {
+                            height: 40px;
+                            margin: 0;
+                        }
+                    }
+                }
+
+                > div {
+                    flex: 1;
+                    margin-right: 15px;
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+
+            ul {
+                text-align: left;
+                li{
+                    display: inline-block;
+                    margin-right: 15px;
+                    line-height: 23px;
+                    input{
+                        vertical-align: middle;
+                    }
+                }
+            }
+
+            .select2-container{
+                width: 100% !important;
+            }
+
+            .select2-container--default{
+                .select2-selection--single{
+                    border-color: #EDEDED;
+                    border-radius: 0;
+                    height: 32px;
+                    padding: 0px 10px;
+                    &:focus{
+                        outline: none;
+                        box-shadow: none;
+                    }
+                    .select2-selection__rendered{
+                        line-height: 32px;
+                    }
+                    .select2-selection__arrow{
+                        top: 50%;
+                        right: 10px;
+                        transform: translateY(-50%);
+                    }
+                }
+            }
+
+            .xs-donate-option{
+                margin-bottom: 0;
+                label {
+                    vertical-align: top;
+                }
+            }
+        }
+
+        .wfdp-social_share-section-title {
+            margin: 25px 0;
+        }
+    }
+
+    select.regular-text{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .regular-text {
+        width: 100%;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        border-color: #EDEDED;
+        border-radius: 0;
+        height: 32px;
+        padding: 15px 10px;
+        
+        &:focus{
+            outline: none;
+            box-shadow: none;
+        }
+
+        &.xs-text_small{
+            max-width: 150px
+        }
+    }
+    textarea.regular-text{
+        height: auto !important;
+    }
+    &.wp-core-ui .button-primary {
+        background: #0085ba;
+        border-color: #0073aa #006799 #006799;
+        box-shadow: 0 1px 0 #006799;
+        color: #fff;
+        text-decoration: none;
+        text-shadow: 0 -1px 1px #006799, 1px 0 1px #006799, 0 1px 1px #006799, -1px 0 1px #006799;
+        box-shadow: none;
+        border: none;
+        border-radius: 0;
+        text-shadow: none;
+        background-color: #324AFF;
+        color: #fff;
+        font-size: 16px;
+        padding: 8px 34px !important;
+        height: auto !important;
+        margin-top: 15px;
+    }
+
+    .wfp-woocommerce-message{
+        padding: 0 40px;
+        background-color: #fff;
+        padding-top: 15px;
+        p{
+            background: #fff;
+            border-left: 4px solid #fff;
+            padding: 12px;
+            border-left-color: #46b450;
+            display: block;
+            margin: 0;
+        }
+    }
+
+    .wfdp-table-design{
+        background-color: #FDFDFF;
+        thead{
+            th{
+                border-bottom: none;
+                color: #444444;
+                font-size: 13px;
+                padding: 21px 15px;
+            }
+        }
+        tbody {
+            td{
+                color: #444444;
+                font-size: 13px;
+                padding: 5px 15px;
+            }
+        }
+        #wfdp-donate-sortable tr {
+            background-image: none;
+            background-color: transparent;
+            border: none;
+            &:nth-child(odd){
+                background-color: #F9F9F9;
+            }
+        }
+    }
+
+    .wfdp-btn,
+    .xs-payment-btnAdd{
+        border-radius: 0;
+        text-shadow: none;
+        background-color: #324AFF;
+        color: #fff;
+        font-size: 12px;
+        padding: 10px 30px;
+        border: none;
+        min-width: 103px;
+        cursor: pointer;
+    }
+
+    .xs-payment-btnAdd{
+        background-color: #ccc;
+    }
+
+    .wfdp-modal-inner  {
+        .xs-modal-header {
+            button {
+                background-color: transparent;
+                border: 1px solid red;
+                color: red;
+                border-radius: 100px;
+                position: absolute;
+                right: 15px;
+                top: 15px;
+                height: 25px;
+                width: 25px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .wfdp-modal {
+        &.opened {
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 100%;
+            border: 1px solid #ccc;
+            -webkit-transition: top .4s;
+            -o-transition: top .4s;
+            transition: top .4s;
+            display: block;
+            visibility: visible;
+            opacity: 1;
+            position: fixed;
+            z-index: 1;
+            overflow-y: auto;
+            top: 0;
+            height: 100%;
+            padding: 0;
+            left: 0;
+        }
+        .wfdp-modal-inner{
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.7s;
+            top: 10px;
+            z-index: 99999;
+            max-width: 700px;
+            padding: 20px;
+            position: absolute;
+            left: -99999px;
+
+            .xs-modal-body{
+                .payment-gateway-info{
+                    .wfdp-payment-table-container {
+                        width: 100%;
+                        overflow: auto;
+                    }
+                    .xs-switch-button_wraper{
+                        .xs_donate_switch_button_label {
+                            width: 35px;
+                        }
+                        .payment-gateway-label {
+                            margin-left: 20px;
+                            vertical-align: middle;
+                            cursor: pointer;
+                            position: relative;
+                            top: -1px;
+                        }
+                    }
+                }
+            }
+
+            .xs-modal-footer{
+                .wfdp-btn{
+                    margin: 15px 0;
+                }
+            }
+        }
+        &.opened {
+            &.wfdp-bigger{
+                .wfdp-modal-inner{
+                    top: 50px;
+                    transform: translateX(-50%);
+                }
+            }
+           
+            .wfdp-modal-inner{
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                background-color: #fff;
+                width: 100%;
+                transform: translate(-50%, -50%);
+                border: 1px solid #ccc;
+                transition: top .4s;
+                
+                display: block;
+                visibility: visible;
+                opacity: 1;
+                position: absolute;
+            }
+        }
+        
+    }
+    // .xs-backdrop.is-open{
+    //     position: fixed;
+    //     height: 100%;
+    //     width: 100%;
+    //     left: 0;
+    //     z-index: 1;
+    //     // background-color: rgba(241, 241, 241, .5);
+    //     background-color: rgba(0, 0, 0, 0.5);
+    //     top: 0;
+    // }
+}
+.wfp-search-tab-wraper .search-tab > select{
+    background-size: inherit;
+}

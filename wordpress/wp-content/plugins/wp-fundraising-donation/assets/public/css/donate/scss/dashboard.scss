@@ -1,0 +1,37 @@
+
+.wfp-view {
+    @import './abstracts/variable/variable';
+
+    @import './abstracts/function/function';
+
+    @import './abstracts/mixin/mixin';
+
+    /*Global scss*/
+    @import 'element/global';
+
+    /*Left Menu*/
+    @import 'element/menu';
+
+    // my campaign
+    @import 'element/myCampaign';
+
+    // report 
+    @import 'element/reports';
+
+    /*Campaign Form Tab*/
+    @import 'element/formsTab';
+
+    /*Campaign Form Content*/
+    @import 'element/formsContent';
+
+    /*Repeater Filed*/
+    @import './element/repeaterField';
+
+    @import './element/flatpickr';
+}
+
+
+
+
+
+

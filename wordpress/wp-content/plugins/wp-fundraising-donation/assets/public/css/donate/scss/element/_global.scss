@@ -1,0 +1,177 @@
+
+body.wfp-disabled{
+	position:relative !important;
+	overflow: hidden;
+}
+body.wfp-disabled:before {
+    content: "" !important;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0px !important;
+    width: 100% !important;
+    height: 100% !important;
+    cursor: no-drop;
+    background: #4645458c !important;
+    z-index: 999;
+    border-radius: 0;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+// Helper classess
+.xs-text-right{
+	text-align: right;
+}
+.xs-text-left{
+	text-align: left;
+}
+.xs-text-center{
+	text-align: center;
+}
+
+.xs-float-left{
+	float: left;
+}
+.xs-float-right{
+	float: right;
+}
+
+/*Gloabal*/
+section.wfp-dashboard{
+	display: block;
+	width: 100%;
+	position: relative;
+	background: #ccc;
+	box-shadow: 0px 0px 26px #ccc;
+    border-radius: 19px;
+	padding: 0;
+	margin: 0;
+	div.dashboard-content{
+		// display: flex;
+		width: 100%;
+		border-radius: 10px;
+		
+		.wfp-content-padding{
+			padding: 30px 20px;
+			box-sizing: border-box;
+		}
+		
+		.dashboard-left-section {
+			// -webkit-box-flex: 0;
+			// -ms-flex: 0 0 30%;
+			// flex: 0 0 30%;
+			// max-width: 230px;
+			box-sizing: border-box;
+			background: $white;
+			border-radius: 10px 0px 0px 10px;
+			background-color: #fff;
+			padding: 30px;
+
+			.wfp-mobile-close-btn{
+				display: none;
+			}
+			
+			.wfp-add-campaign{
+				margin: 0 auto;
+				text-align: center;
+				.add-button{
+					text-transform: capitalize;
+					border-radius: 5px;
+					padding: 17px 28px;
+					box-shadow: 0px 4px 14px rgba(50, 74, 255, .5);
+					&:hover {
+						border-color: transparent;
+					}
+					a{
+						color: $white;
+						text-decoration: none;
+						box-shadow: unset;
+						font-size: 14px;
+					}
+				}
+				
+			}
+			
+			/*Profile Info Page*/
+			.wfp-profile-user{
+				display:block;
+				margin: 0 auto;
+				text-align: center;
+				padding-top: 45px;
+				padding-bottom: 32px;
+				.profile-image{
+					text-align: -webkit-center;
+					img{
+						border-radius: 50%;
+						padding: 5px;
+						max-width: 80px;
+						max-height: 80px;
+						box-shadow: 0 1px 6px rgba(204, 204, 204, .5);
+					}
+				}
+				.profile-info {
+					margin-top: 5px;
+					span {
+						color: #999999;
+						font-size: 13px;
+						font-weight: 500;
+						strong{
+							color: #333333;
+						}
+					}
+				}
+			}
+
+			// profile left menu
+			.wfp-menu-left {
+				margin-left: -30px;
+				margin-right: -30px;
+			}
+
+			// Donate Amount
+			.wfp-donate-amount {
+				margin-top: 1px;
+				span{
+					color: #fff;
+					font-size: 14px;
+					background-color: #FF4938;
+					font-weight: 500;
+					border-radius: 5px;
+					padding: 2px 21px;
+					display: inline-block;
+					line-height: 1.5;
+					box-shadow: 0 1px 6px rgba(255, 73, 56, .5);
+				}
+			}
+		}
+		.dashboard-right-section{
+			background: #fafbfbfa;
+			border-radius: 0px 10px 10px 0px;
+			background-color: #F7F8FC;
+			.wfp-mobile-nav,
+			.wfp-mobile-close-btn {
+				display: none;
+			}
+			&--title{
+				color: #333333;
+				font-size: 16px;
+				font-weight: 500;
+				padding: 15px 25px;
+				border-bottom: 1px solid #F5F5F5;
+				background-color: #fff;
+				border-radius: 10px;
+				box-shadow: 0 1px 5px rgba(204, 204, 204, 0.2);
+				margin-top: 0;
+				margin-bottom: 30px;
+				&:before {
+					display: none;
+				}
+			}
+		}
+		
+		
+	}
+	
+	
+}
+	

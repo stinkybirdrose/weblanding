@@ -1,0 +1,52 @@
+.reports-content {
+    .wfp-search-tab-wraper {
+        .search-tab {
+            flex: 10;
+            position: relative;
+            input,
+            select {
+                box-sizing: border-box;
+                font-size: 14px;
+            }
+            .button-primary{
+                color: white;
+                padding: 0 17px;
+                border-radius: 5px;
+                line-height:    10px;
+                font-size: 16px;
+            }
+            &:last-child {
+                flex: 1;
+            }
+        }
+    }
+
+    .wfp-report-table-wraper {
+        overflow: auto;
+        .wfp-report-table{
+            width: 100%;
+            
+            th,
+            td {
+                border-color: #F9F9F9;
+            }
+
+            .wfp-tbl-price{
+                text-align: right;
+            }
+            // .wfp-tbl-data{
+            //     text-align: center;
+            // }
+            
+
+            tbody {
+                td {
+                    a{
+                        text-decoration: none;
+                        box-shadow: none;
+                    }
+                }
+            }
+        }
+    }
+}

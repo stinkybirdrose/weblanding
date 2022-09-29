@@ -1,0 +1,307 @@
+.wfp-goal-wraper {
+    padding: {
+        left: 28px;
+    }
+    .wfdp-progress-bar + .raised {
+        float: left;
+    }
+    .target-date-goal.raised-amount {
+        float: left;
+        color: #324aff;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 24px;
+    }
+    .wfp-donate-button {
+        .submit-btn{
+            background-color: inherit;  
+            color: #324aff;
+            font-size: 15px;
+            font-weight: 500;
+            border-width: 2px;
+            padding: 18px 42px;
+        }
+    }
+    .wfp-campaign-user{
+        margin-top: 60px;
+        .profile-image {
+            vertical-align: middle;
+        }
+    }
+    .wfp-total-backers-count{
+        .wfp-backers-title{
+            margin: 0;
+            line-height: 24px;
+            letter-spacing: -2px;
+        }
+        .wfp-backers-count{
+            line-height: 1;
+            margin: 0;
+        }
+
+        .pledge__detail {
+            .xs-money-symbol{
+                width: 70px;
+                line-height: 54px;
+                font-weight: 600;
+                border-right: 0;
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+            }
+            .xs-money-symbol,
+            .xs-field {
+                height: 55px;
+                max-width: 150px;
+                background-color: #fff;
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+            }
+            .xs-field::placeholder {
+                opacity: .3;
+            }
+        }
+        
+    }
+    .wfp-total-pledge-count{
+        .wfp-additional-data{
+            .pledge-title{
+                color: #999999;
+                font-size: 16px;
+                margin: 0;
+                font-weight: 600;
+                line-height: 1;
+            }
+            .pledge-count{
+                color: #333333;
+                font-size: 36px;
+                font-weight: 600;
+                margin-bottom: 0;
+                line-height: 1;
+            }
+            .pledge__detail {
+                &:last-child{
+                    margin-left: auto;
+                }
+            }
+        }
+        > .wfp-pledge-count{
+            line-height: 24px;
+            margin: 0;
+            letter-spacing: -2px;
+        }
+        > .wfp-pledge-title{
+            line-height: 24px;
+            margin: 0;
+            letter-spacing: -2px;
+            margin-bottom: 4px;
+        }
+    }
+}
+
+.wfp-goal-single {
+    .wfdp-donate-goal-progress{
+        margin-bottom: 24px;
+        overflow: visible;
+
+        .raised {
+            color: #999999;
+            font-size: 16px;
+            overflow: hidden;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .target-date-goal {
+                color: #324aff;
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 24px;
+                padding-right: 2px;
+            }
+            &.wfp-both-show-raised .wfp-inner-data {
+                color: #666666;
+                font-size: 24px;
+                line-height: 24px;
+                font-weight: 400;
+                margin-top: 0;
+                strong {
+                    font-size: inherit
+                }
+            }
+            &:after {
+                display: none;
+            }
+        }
+    }
+    .wfdp-progress-bar {
+        margin-bottom: 8px;
+    }
+    .wfp-inner-data,
+    .wfp-inner-data strong {
+        color: #666666;
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 400;
+        margin-top: 5px;
+    }
+
+    .wfp-both-show-raised .wfp-inner-data {
+        display: inline-block;
+    }
+
+    .raised {
+        color: $primary;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: -1px;
+        margin-bottom: 15px;
+
+        &::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    }
+
+    .number_donation_count {
+        color: #666666;
+        font-size: 14px;
+        font-weight: normal;
+        line-height: 23px;
+        padding-left: 1px;
+    }
+
+    .wfp-icon {
+        margin-right: 5px;
+        display: inline-block;
+        top: 1px;
+        position: relative;
+        color: #5766FF;
+    }
+}
+
+.wfp-total-backers-pie{
+    display: flex;
+    flex-wrap: wrap;
+    > div{
+        flex: 0 0 50%
+    }
+}
+
+
+.wfdp-donate-goal-progress{
+    &.amount_show,
+    &.both_show{
+        .target-date-goal.raised-amount {
+            display: flex;
+            align-items: center;
+            margin-right: 6px
+        }
+        .raised {
+            justify-content: initial;
+        }
+        .wfp-raised-text {
+            margin-left: 6px;
+        }
+        .raised-amount {
+            .wfp-inner-data {
+                color: #324aff;
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 24px;
+                padding-right: 2px;
+            }
+        }
+         
+    }
+    .xs_donate_chart{
+        position: relative;
+        display: flex;
+        align-items: center;
+        .pie-counter{
+            display: inline-block;
+            position: absolute;
+            left: 39px;
+        }
+    }
+}
+.wfp-currency-symbol {
+    font-style: normal;
+}
+
+.wfdp-progress-bar {
+    margin-bottom: 5px;
+    & + .raised{
+        margin-top: 10px;
+    }
+    .xs-progress{
+        height: 8px;
+        border-radius: 0;
+        overflow: visible;
+    }
+}
+
+.xs-progress {
+    border-radius: 0px;
+    height: 8px;
+    background-color: #ededed;
+}
+
+.wfp-round-bar-data{
+    display: none;
+}
+.wfp-round-bar {
+    position: relative;
+    margin-top: 25px;
+    margin-bottom: -5px;
+
+    + .number_donation_count {
+        display: none !important;
+    }
+
+    .wfp-round-bar-data {
+        height: 30px;
+        width: 30px;
+        line-height: 30px;
+        background-color: #324AFF;
+        border-radius: 100px;
+        position: absolute;
+        display: block;
+        font-weight: 700;
+        font-size: 11px;
+    }
+}
+
+
+
+
+.xs-progress-bar {
+    background-color: $primary;
+}
+
+.wfp- {
+
+    &total-backers-count,
+    &total-pledge-count {
+        margin-bottom: 17px;
+    }
+    &total-pledge-count{
+        margin-bottom: 28px;
+    }
+
+    &backers-title,
+    &pledge-title {
+        margin-bottom: 5px;
+        color: #999999;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    &backers-count,
+    &pledge-count {
+        color: #333333;
+        font-size: 36px;
+        font-weight: 600;
+        margin-bottom: 0;
+    }
+}

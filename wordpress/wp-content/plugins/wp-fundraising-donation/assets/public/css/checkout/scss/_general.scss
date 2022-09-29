@@ -1,0 +1,56 @@
+
+.wfp-order-summery-section{
+    margin-bottom: 30px;
+    .order_details{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        li {
+            display: inline-block;
+            border-right: 1px solid #eeddee;
+            padding-right:  10px;
+            margin-right: 10px;
+            font-size: 16px;
+            line-height: 23px;
+            color: #333;
+            &:last-child {
+                border: none;
+                padding-right: 0;
+                margin-right: 0;
+            }
+            strong{
+                display: block;
+            }
+        }
+    }
+}
+
+.wfp-order-details-section{
+    margin-bottom: 30px;
+    .wfdp-table-container{
+        overflow: auto;
+        .wfdp-table-design {
+            background-color: #cccccc29;
+        }
+    }
+}
+
+.wfp-billing-section {
+    .shipping_details{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        border: 1px solid #eeddee;
+        li {
+            border-bottom: 1px solid #eeddee;
+            padding: 15px;
+            font-size: 16px;
+            line-height: 23px;
+            color: #333;
+            &:last-child {
+                border-bottom: 0;
+            }
+        }
+    }
+}

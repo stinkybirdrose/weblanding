@@ -1,0 +1,24 @@
+.xs-btn {
+    cursor: pointer;
+    border-radius: 7px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1;
+    padding: 13px 22px;
+    background-color: #324aff;
+    background-image: none !important;
+    color: #fff;
+
+    &:not([class*="outline"]) {
+        border: 0px solid #000;
+    }
+
+    &-primary {
+        background-color: $primary;
+    }
+
+    &-lg {
+        padding: 20px 20px;
+        font-size: 20px;
+    }
+}

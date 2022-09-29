@@ -1,0 +1,219 @@
+.wfp-pledge-block {
+    position: relative;
+    transition: background-color .4s ease;
+    overflow: hidden;
+
+    &.select-reward {
+        background-color: #f7f9fb;
+
+        .pledge__hover-content,
+        &::before {
+            display: none;
+        }
+
+        &::after {
+            opacity: 1;
+        }
+
+        .wfp-pledge-hide {
+            display: block;
+        }
+    }
+
+    &::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: $primary;
+        opacity: 0;
+        transition: opacity .4s ease;
+    }
+
+    &::after {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        box-shadow: inset 0px 0px 0px 2px $primary;
+        z-index: 1;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity .5s ease;
+    }
+
+    &:hover {
+        cursor: pointer;
+
+        &::before {
+            opacity: 1;
+        }
+
+        .pledge__hover-content {
+            opacity: 1;
+            transform: translateY(-50%) scale3d(1, 1, 1);
+        }
+    }
+
+    .wfp-pledge-title {
+        color: #111111;
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 12px;
+        line-height: 24px;
+        letter-spacing: -1px;
+    }
+
+    .wfp-description {
+        margin-bottom: 30px;
+
+        >p {
+            color: #3a3a3a;
+            font-size: 16px;
+            margin-bottom: 0;
+            font-weight: 500;
+        }
+    }
+
+    .pledge__detail-info-list {
+        padding: {
+            left: 0;
+        }
+
+        margin: 0;
+        line-height: 1;
+
+        >li {
+            display: inline-block;
+            list-style: none;
+            color: #111111;
+            font-size: 16px;
+            font-weight: 600;
+
+            &::after {
+                content: ",";
+            }
+
+            &:last-child {
+                &::after {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .price-pledge {
+        color: #111111;
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+
+    .pledge__detail-label {
+        color: #999999;
+        display: block;
+        font-size: 14px;
+        line-height: 1;
+    }
+
+    .pledge__detail-info {
+        color: #111111;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1;
+        margin: 0;
+        .select2-selection--single {
+            height: 32px;
+            .select2-selection__rendered {
+                line-height: 31px;
+                padding-left: 10px;
+                font-size: 12px;
+                background-color: #fff;
+            }
+        }
+    }
+
+    .wfdp-input-payment-field{
+        margin-bottom: 20px;
+    }
+
+    .pledge__detail {
+        margin-bottom: 10px;
+    }
+
+    .wfdp-donation-input-form {
+        margin-bottom: 20px;
+    }
+
+    .wfp-pledge-hide {
+        display: none;
+        .wfdp-donation-input-form {
+            .pledge__detail-label{
+                margin-bottom: 5px;
+                font-weight: normal;
+            }
+            .pledge__detail-info{
+                .select2-container--default .select2-selection--single {
+                    background-color: #FAFAFA;
+                    border: 1px solid #ededed;
+                    border-radius: 0px;
+                }
+            }
+        }
+        .wfp-additional-data{
+            flex-direction: column;
+            .wfp-pledge-amount{
+                width: 100%;
+                background-color: #fff;
+            }
+            .xs-money-symbol{
+                width: 55px;
+                background-color: #fff;
+                border-right: 0;
+            }
+        }
+
+        .pledge__detail-label{
+            margin-bottom: 4px;;
+        }
+    }
+
+    .pledge__hover-content {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%) scale3d(1.5, 1.5, 1);
+        left: 0;
+        width: 100%;
+        z-index: 5;
+        opacity: 0;
+        transition: transform .4s ease, opacity .4s ease;
+
+        >p {
+            margin-bottom: 0px;
+            color: $white;
+        }
+    }
+}
+
+.wfp-pledge-section-title {
+    margin-bottom: 0px;
+    color: #3a3a3a;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.wfp-pledge-block,
+.wfp-pledge-section-title {
+    padding: 25px 28px;
+    border: 1px solid #f0f0f0;
+    padding-bottom: 15px;
+}
+
+.wfp-pledge-block {
+    margin-top: -1px;
+}

@@ -1,0 +1,148 @@
+
+section.wfp-dashboard{
+	padding: 0;
+	margin: 0;
+	div.dashboard-content{
+		.dashboard-left-section {
+			position: relative;
+			min-height: 760px;
+		
+			.wfp-menu-left{
+				ul.wfp-main-menu{
+					display: block;
+					margin: 0;
+					padding: 0;
+					list-style: none;
+					li{
+						float:none;
+						padding:15px 25px;
+						position: relative;
+						border-top: 1px solid #F5F5F5;
+						
+						&.opend i{
+							color: #324AFF;
+						}
+						a{
+							text-decoration: none;
+							box-shadow: none;
+							font-weight: bold;
+							color: #333333;
+							font-size: 14px;
+							position: relative;
+							display: block;
+							outline: none;
+							&.wfp_sub_menu{
+								&:before{
+									content: "\e94b";
+									font-family: 'wp-fundraising';
+									font-weight: 700;
+									color: #D5D8E4;
+									position: absolute;
+									right: 0;
+									top: 50%;
+									transform: translateY(-50%);
+								}
+							}
+							i{
+								color: #CCD0DE;
+								font-size: 16px;
+								display: inline-block;
+								vertical-align: middle;
+								margin-right: 5px;
+								position: relative;
+								top: -1px;
+							}
+						}
+						
+						ul.sub-menu{
+							list-style:square;
+							float:none;
+							padding:0px;
+							margin: 0px;
+							margin-left: 20px;
+							display: none;
+							li{
+								border: none;
+								padding: 5px;
+								a{
+									font-size: 13px;
+									color: #222222a3;
+								}
+								
+							}
+							li.opend-sub{
+								color: #324AFF;
+								a{
+									color: $primary;
+								}
+							}
+						}
+					}
+					li:last-child{
+						border-bottom: 1px solid #F9F9F9;
+					}
+					li.opend{
+						a{
+							color: $primary;
+							position: relative;
+							&.wfp_sub_menu{
+								&:before{
+									content: "\e952";
+									color: #324AFF;
+								}
+							}
+						}
+						ul.sub-menu{
+							display: block;
+							padding: 5px 0;
+						}
+					}
+					li.opend:before{
+						content: "";
+						left: 0px;
+						position: absolute;
+						height: 30px;
+						width: 3px;
+						background: $primary;
+					}
+						
+				}
+			}
+			
+			.wfp-logout{
+				margin: 0 auto;
+				text-align: center;
+				margin: 0 auto;
+				text-align: center;
+				padding-top: 50px;
+				position: absolute;
+				bottom: 30px;
+				width: 80%;
+				box-sizing: border-box;
+				left: 50%;
+				transform: translateX(-50%);
+				.logout-button{
+					text-transform: capitalize;
+					border-radius: 5px;
+					padding: 18px 15px;
+					background-color: #FEF2F3;
+					border: none;
+					display: block;
+					width: 100%;
+					color: #f73c48;
+					font-weight: 500;
+					display: block;
+					text-decoration: none;
+					font-size: 14px;
+					box-shadow: none;
+					box-sizing: border-box;
+					i{
+						margin-left: 7px;
+					}
+				}
+			}
+		}
+		
+	}
+	
+}

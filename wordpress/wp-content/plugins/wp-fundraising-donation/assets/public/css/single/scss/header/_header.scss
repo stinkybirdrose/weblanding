@@ -1,0 +1,35 @@
+.wfp-post-header {
+    // margin-bottom: 44px;
+}
+
+.wfp-header-cat {
+    color: $primary;
+    margin-bottom: 0px;
+    margin: 0;
+    &:before {
+        display: none;
+    }
+    &--link {
+        color: #324aff;
+        font-size: 14px;
+        line-height: 23px;
+        font-weight: 600;
+        text-decoration: none;
+        box-shadow: none;
+    }
+    &--separator {
+        vertical-align: middle;
+        margin: 0 5px;
+    }
+}
+
+.wfp-post-title {
+    color: #3a3a3a;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 0;
+    letter-spacing: -2px;
+    line-height: 50px;
+    margin: 0;
+    margin-bottom: 44px;
+}

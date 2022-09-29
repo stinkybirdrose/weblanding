@@ -1,0 +1,17 @@
+
+.wfp-view {
+    @import './abstracts/variable/variable';
+
+    @import './abstracts/function/function';
+
+    @import './abstracts/mixin/mixin';
+
+    /*Login Content scss*/
+    @import 'element/listCampaign';
+}
+
+
+
+
+
+

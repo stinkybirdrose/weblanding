@@ -1,0 +1,28 @@
+.wfp-campaign-user {
+    .profile-image {
+        display: inline-block;
+        margin-right: 10px;
+        vertical-align: middle;
+        >img {
+            border-radius: 50%;
+        }
+    }
+
+    .profile-info {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .display-name {
+        display: block;
+        color: #111111;
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 1;
+    }
+
+    .country-name {
+        color: #666666;
+        font-size: 11px;
+    }
+}

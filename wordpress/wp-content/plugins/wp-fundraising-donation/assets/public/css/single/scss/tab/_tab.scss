@@ -1,0 +1,178 @@
+.wfp-tab {
+    line-height: 1;
+
+    margin: {
+        left: 0;
+        bottom: 40px;
+    }
+
+    padding: {
+        left: 0;
+        right: 30px;
+    }
+
+    display: block;
+    clear: both;
+
+    border-bottom: 2px solid #ededed;
+
+    >li {
+        list-style: none;
+        display: inline-block;
+
+        &:not(:last-child) {
+            margin-right: 45px;
+        }
+
+        &.active {
+            >a {
+                color: $primary;
+
+                &::before {
+                    width: 110%;
+                }
+            }
+        }
+
+        >a {
+            display: block;
+            color: #313131;
+            font-size: 18px;
+            font-weight: 600;
+            position: relative;
+            letter-spacing: -1px;
+            text-decoration: none;
+
+            padding: {
+                bottom: 13px;
+            }
+
+            &::before {
+                position: absolute;
+                content: "";
+                bottom: -2px;
+                left: 0;
+                height: 2px;
+                width: 0%;
+                background-color: $primary;
+                transition: width .4s ease;
+            }
+        }
+    }
+}
+
+.wfp-tab-div-disable {
+    display: none;
+
+    &.active {
+        display: block;
+    }
+}
+
+.wfp-tab-content:focus {
+    outline: none;
+}
+
+.wfp-tab-content-wraper{
+    .wfp-tab-content{
+        .wfp-details-update-tab{
+            border-left: 2px solid #324AFF;
+            padding-left: 63px;
+            padding-top: 33px;
+            margin-left: 5px;
+    
+            &--list {
+                margin-bottom: 30px;
+                position: relative;
+                &:before{
+                    content: "";
+                    width: 14px;
+                    height: 14px;
+                    display: inline-block;
+                    border: 2px solid #324AFF;
+                    border-radius: 100px;
+                    position: absolute;
+                    top: 6px;
+                    left: -71px;
+                    background-color: #fff;
+                }
+                &:after{
+                    content: "";
+                    width: 36px;
+                    height: 2px;
+                    background-color: #324AFF;
+                    display: inline-block;
+                    position: absolute;
+                    top: 12px;
+                    left: -57px;
+                }
+                &__title{
+                    color: #3a3a3a;
+                    font-size: 18px;
+                    font-weight: 500;
+                    margin-bottom: 9px;
+                }
+                &__content{
+                    color: #3a3a3a;
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+            }
+        }
+
+        .wfp-recent-section{
+            .recent-block{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid #F0F0F0;
+                padding: 15px;
+                border-bottom: none;
+                &:last-child{
+                    border-bottom: 1px solid #F0F0F0;
+                }
+                & > div {
+                    flex: 1;
+                    text-align: center;
+                }
+                .user-info{
+                    text-align: left;
+                    .wfp-campaign-user{
+                        .profile-info{
+                            .display-name{
+                                color: #111111;
+                                font-size: 14px;
+                                font-weight: 500;
+                            }
+                        }
+                    }
+                }
+
+                .price-report{
+                    &--amount,
+                    &--symbol{
+                        color: #333333;
+                        // font-size: 18px;
+                        font-weight: 600;
+                    }
+                    &--symbol{
+                        font-style: normal;
+                    }
+                }
+
+                .report-date{
+                    color: #999999;
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+            }
+        }
+
+        .wfp-submit-updates {
+            border-top: 1px solid #F0F0F0;
+            padding-top: 10px;
+            margin-top: 45px;
+        }
+    }
+    
+}

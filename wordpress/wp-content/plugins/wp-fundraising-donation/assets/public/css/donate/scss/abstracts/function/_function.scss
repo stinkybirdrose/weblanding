@@ -1,0 +1,13 @@
+@import '../variable/variable';
+
+@function rem($pixels, $context: $font_size) {
+    @if (unitless($pixels)) {
+        $pixels: $pixels * 1px;
+    }
+
+    @if (unitless($context)) {
+        $context: $context * 1px;
+    }
+
+    @return $pixels;
+}

@@ -1,0 +1,110 @@
+.xs-donate-row,
+.xs-pledge-row,
+.xs-additional-row {
+    &:not(:last-child) {
+        margin-bottom: 30px;
+    }
+}
+
+.xs-repeater-field-wrap {
+    box-shadow: 0px 5px 8px 0px rgba($black, 0.04);
+    background-color: $white;
+    border: 1px solid #ededed;
+    padding: 10px;
+}
+
+
+.xs-donate-fixed-field-section {
+    padding: 24px;
+}
+
+.xs-donate-repeatable-field-section,
+.xs-donate-fixed-field-section,
+.xs-donate-repeatable-field-section {
+    margin-top: 17px;
+}
+
+.xs-donate-hidden {
+    display: none;
+}
+
+.xs-donate-visible {
+    display: block;
+}
+
+#poststuff {
+    .xs-donate-row-head {
+        padding: 14px;
+
+        >h2 {
+            padding: 0;
+            color: $semi_black;
+            font-size: rem(13px);
+            font-weight: 600;
+        }
+    }
+}
+
+.xs-donate-row-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+
+    .handlediv {
+        float: none;
+        @include equal-size(25px);
+    }
+
+    .xs-header-btn-group {
+        display: flex;
+    }
+}
+
+.xs_donate_filed_style_2 {
+    .xs-donetion-field-description {
+        width: 100%;
+        padding-left: 79px;
+    }
+
+    .xs-donate-field-wrap {
+        width: 100%;
+
+        &:not(:last-child) {
+            margin-right: 0px;
+        }
+    }
+
+    .xs-text-field {
+        margin-left: 35px;
+    }
+}
+
+.xs-donate-limit-field-section {
+    padding: 30px 25px;
+
+    .xs-donate-field-wrap {
+        margin-bottom: 15px;
+    }
+}
+
+.xs-additonal-fees-field-section {
+    padding: 30px 25px;
+
+    .xs-donate-field-wrap {
+        width: 100%;
+
+        &.xs-mb-0 {
+            margin-bottom: 0;
+        }
+
+        &.xs-mb-2 {
+            margin-bottom: 15px;
+        }
+    }
+}
+
+.xs_select_input_and_symbol_group {
+    display: flex;
+    padding-left: 22px;
+}

@@ -1,0 +1,70 @@
+.wfdp-table-design {
+    border: 0px solid #000;
+    background-color: #cccccc29;
+
+    thead,
+    tbody,
+    tfoot {
+
+        th,
+        td {
+            text-align: left;
+            padding: 15px 20px;
+            vertical-align: middle;
+        }
+    }
+
+    thead {
+        th {
+            color: #474747;
+            border: 0px solid #000;
+            border-bottom: 1px solid rgba(0, 0, 0, .1);
+        }
+    }
+
+    tbody {
+        td {
+            border: 0px solid #000;
+            border-bottom: 1px dotted rgba(0, 0, 0, .1);
+            color: #777777;
+        }
+    }
+
+    em {
+        font-style: italic;
+    }
+
+    tfoot {
+        td {
+            color: #474747;
+            border-color: transparent;
+        }
+    }
+}
+
+.entry-content {
+    .wfp-order-details-section {
+        table {
+            margin-bottom: 10px;
+            background-color: #fff;
+        }
+    }
+
+    .payment_method_info {
+        table {
+            margin-top: 0px;
+            margin-bottom: 0;
+        }
+    }
+}
+
+.payment_method_info {
+    .xs-table-responsive {
+        margin-bottom: 10px;
+    }
+}
+
+.wfp-order-payment-section {
+    background-color: #cccccc29;
+    padding: 15px 20px;
+}

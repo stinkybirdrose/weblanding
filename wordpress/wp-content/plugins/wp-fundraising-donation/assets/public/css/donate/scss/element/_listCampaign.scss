@@ -1,0 +1,572 @@
+.xs-float-left{
+	float: left;
+}
+.xs-float-right{
+	float: right;
+}
+.wfp-list-campaign{
+	display: block;
+	width: 100%;
+	overflow: visible;
+
+	.wfp-campaign-row{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.wfp-column-1{
+		.wfp-campaign-row{
+			flex-direction: column;
+		}
+	}
+	.wfp-column-3{
+		.single-campaign-blog{
+			flex: 0 0 33.33%;
+		}
+	}
+	.wfp-column-2{
+		.single-campaign-blog{
+			flex: 0 0 50%;
+		}
+	}
+	.wfp-column-4{
+		.single-campaign-blog{
+			flex: 0 0 25%;
+		}
+	}
+
+	.wfp-campaign-carousel{
+		overflow: hidden;
+		.single-campaign-blog{
+			flex: none !important;
+		}
+	}
+
+	.single-campaign-blog {
+		box-sizing: border-box;
+		// margin-bottom: 18px;
+		&:last-of-type{
+			.campaign-blog{
+				border-bottom: 0;
+			}
+		}
+	}
+	
+	.campaign-blog{
+		background: #fff;
+		// border-bottom: 1px solid #F0F0F0;
+		// margin-bottom: 10px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		&.wfp-flip-content-Yes{
+			flex-direction: column-reverse;
+		}
+		.wfp-compaign-contents{
+			padding: 35px;
+			padding-top: 33px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			width: 100%;
+			// min-height: 370px;
+			.wfp-campaign-content{
+				&--title{
+					margin: 0;
+					margin-bottom: 18px;
+					font-size: 20px;
+					padding: 0;
+					line-height: 26px;
+					letter-spacing: -1px;
+					&__link{
+						color: #111111;
+						font-weight: 700;
+						text-decoration: none;
+						box-shadow:none;
+					}
+				}
+				&--short-description{
+					color: #666666;
+					font-size: 15px;
+					margin: 0;	
+					margin-bottom: 24px;
+					line-height: 23px;
+				}
+				&--raised-fund{
+					display: block;
+					color: #999999;
+					font-size: 16px;
+					&__amount {
+						color: #111111;
+						font-weight: 500;
+					}
+				}
+				&--progress{
+					height: 6px;
+					border-radius: 0;
+					margin-top: 2px;
+				}
+				&--cat{
+					margin: 0;
+					line-height: 1;
+					font-size: 14px;
+					margin-bottom: 0px;
+					&__link{
+						color:#324aff;
+						font-weight: 500;
+						text-decoration: none;
+						box-shadow:none;
+					}
+				}
+
+				.target-date-goal.raised-amount{
+					float: left;
+				}
+
+				.wfp-both-show-raised .wfp-inner-data {
+					display: inline-block;
+				}
+
+				.target-date-goal,
+				.number_donation_count,
+				.donate-percentage{
+					color: #111111;
+					font-size: 16px;
+					font-weight: 600;
+					line-height: 23px;
+				}
+
+				.wfp-inner-data,
+				.wfp-inner-data .donate-percentage,
+				.wfp-inner-data strong {
+					color: #666666;
+					font-size: 14px;
+					line-height: 24px;
+					font-weight: 400;
+				}
+
+				.wfdp-progress-bar + .raised {
+					float: left;
+					margin: 0;
+				}
+
+				.number_donation_count {
+					float: none;
+					color:#666666;
+					font-size: 14px;
+					line-height: 24px;
+					display: inline-block;
+					font-weight: normal;
+					padding-left: 1px;
+					// margin-top: 9px;
+					.wfp-icon {
+						margin-right: 5px;
+						display: inline-block;
+						top: 1px;
+						position: relative;
+						color: #5766FF;
+					}
+				}
+
+				.wfdp-donate-goal-progress{
+					color: #999999;
+					font-size: 16px;
+					letter-spacing: -1px;
+					.wfdp-progress-bar {
+						.xs-progress {
+							border-radius: 0;
+							height: 6px;
+						}
+					}
+					.raised {
+						// line-height: 23px;
+						display: flex;
+						justify-content: space-between;
+						flex-wrap: wrap;
+						margin-bottom: 6px;
+						.number_donation_count {
+							float: right;
+						}
+						.wfp-goal-sp{
+							color: #111111;
+							font-size: 16px;
+							font-weight: 600;
+						}
+					}
+					&.amount_show,
+					&.both_show{
+						.target-date-goal.goal-amount{
+							line-height: 18px;
+						}
+						.target-date-goal.raised-amount {
+							display: flex;
+							align-items: center;
+							margin-right: 6px;
+						}
+						.raised {
+							justify-content: initial;
+							align-items: center;
+						}
+						.wfp-raised-text {
+							margin-left: 6px;
+						}
+						.wfp-inner-data{
+							line-height: 26px;
+						}
+						.raised-amount {
+							.wfp-inner-data {
+								color: #111111;
+								font-size: 24px;
+								font-weight: 600;
+								
+								padding-right: 2px;
+
+								.donate-percentage{
+									color: #111111;
+									font-weight: 600;
+								}
+							}
+						}
+						.wfp-currency-symbol {
+							font-style: normal;
+							font-size: 16px;
+						}
+						.wfp-of {
+							margin-right: 3px;
+						}
+					}
+					.xs_donate_chart{
+						position: relative;
+						display: flex;
+						align-items: center;
+						.pie-counter{
+							display: inline-block;
+							position: absolute;
+							left: 39px;
+						}
+					}
+				}
+			}
+			.wfp-campign-user{
+				margin-top: 37px;
+				.profile-image{
+					display: inline-block;
+					vertical-align: middle;
+					margin-right: 6px;
+					img{
+						border-radius: 50%;
+					}
+				}
+				.profile-info{
+					display: inline-block;
+					vertical-align: middle;
+					.display-name{
+						color: #666666;
+						font-size: 11px;
+						display: inline-block;
+						line-height: 1.1;
+						vertical-align: middle;
+						&__author {
+							color: #111111;
+							font-size: 14px;
+							display: block;
+							font-weight: 500;
+						}	
+					}
+				}
+			}
+		}
+
+		.wfp-post-image,
+		.wfp-feature-video {
+			min-height: 250px;
+		}
+		.wfp-post-image{
+			width: 100%;
+			position: relative;
+			margin: 0;
+			display: flex;
+			align-items: center;
+			&:before{
+				content: '\e98d';
+				font-family: 'wp-fundraising';
+				color: #324AFF;
+				background-color: #fff;
+				height: 36px;
+				width: 36px;
+				display: inline-block;
+				text-align: center;
+				line-height: 36px;
+				border-radius: 50%;
+				position: absolute;
+				bottom: -18px;
+				right: 30px;
+				font-size: 16px;
+				font-weight: 900;
+				display: none;
+			}
+		}
+		.wfp-feature-video{
+			position:relative;
+			width: 100%;
+			height: 100%;
+			&:before{
+				content: "";
+				background: #33333396;
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				z-index: 1;
+				display: none;
+			}
+			&:after {
+				content: '\ea2b';
+				font-family: 'wp-fundraising';
+				color: #D71C1B;
+				background-color: #fff;
+				height: 36px;
+				width: 36px;
+				display: inline-block;
+				text-align: center;
+				line-height: 36px;
+				border-radius: 50%;
+				position: absolute;
+				bottom: -18px;
+				right: 30px;
+				font-size: 16px;
+				font-weight: 900;
+				z-index: 1;
+				display: none;
+			}
+			span:before{
+				position: absolute;
+				top: 45%;
+				left: 45%;
+				color: #fff;
+				padding: 9px;
+				background: #f31313d1;
+				border-radius: 100%;
+				z-index: 9;
+			}
+		}
+	}
+
+	.wfp-campaign-container  {
+		height: 250px;
+    	width: 100%;
+		a{
+			display: block;
+			height: 100%;
+		}
+		.wfp-post-image {
+			height: 100%;
+			img {
+				height: 100%;
+				position: absolute;
+				width: auto;
+				display: block;
+				left: 0;
+				top: 0;
+				right: 0;
+				margin: 0 auto;
+			}
+		}
+	}
+	.number_donation_count_list{
+		display: none;
+	}
+
+	// list view
+	.wfp-layout-list{
+		.wfp-campaign-row{
+			flex-direction: unset;
+		}
+		.single-campaign-blog{
+
+			&:last-child {
+				.campaign-blog {
+					margin-bottom: 0;
+				}
+
+			}
+			.campaign-blog{
+				display: flex;
+				flex-direction: row;
+				&.wfp-flip-content-Yes {
+					flex-direction: row-reverse;
+				}
+
+				
+				.wfp-post-image, 
+				.wfp-feature-video{
+					height: 100%;
+				}
+
+				.wfp-post-image{
+					&:before {
+						right: -18px;
+						bottom: inherit;
+						top: 50%;
+						transform: translateY(-50%);
+					}
+				}
+
+				.wfp-feature-video:after{
+					right: -18px;
+					bottom: inherit;
+					top: 50%;
+					transform: translateY(-50%);
+				}
+
+				.wfp-campaign-container,
+				.wfp-compaign-contents {
+					// flex: 1;
+					display: block;
+					flex: 0 0 50%;
+				}
+			}
+		}
+		.single-campaign-blog{
+			flex: 0 0 100%;
+		}
+		.wfp-campaign-content--cat,
+		.number_donation_count {
+			display: none !important;
+		}
+		.number_donation_count_list {
+			color: #0564F2;
+			font-size: 14px;
+			line-height: 14px;
+			font-weight: 500;
+			letter-spacing: .4px;
+			display: inline-block;
+			background-color: #E5EFFE;
+			border-radius: 100px;
+			padding: 10px 15px;
+			display: inline-block;
+			.wfp-icon{
+				margin-right: 6px;
+			}
+		}
+
+		.wfp-campaign-container .wfp-post-image img {
+			height: auto;
+			position: static;
+		}
+	}
+
+
+
+	// masonary view
+	.wfp-layout-masonary{
+		&.wfp-column-1{
+			.wfp-campaign-row {
+				column-count: 1;
+			}
+		}
+		&.wfp-column-2 {
+			.wfp-campaign-row {
+				column-count: 2;
+			}
+		}
+		&.wfp-column-4 {
+			.wfp-campaign-row {
+				column-count: 4;
+			}
+		}
+		.wfp-campaign-row {
+			column-count: 3;
+			display: block;
+			column-gap: 0;
+			.single-campaign-blog{
+				max-width: 100%;
+				-webkit-column-break-inside: avoid;
+				page-break-inside: avoid;
+				break-inside: avoid;
+				// margin-bottom: 30px;
+			}
+		}
+	}
+
+	// wfp-layout-grid
+	.wfp-layout-grid{
+		.campaign-blog{
+			margin: 15px;
+		}
+	}
+
+	.wfp-fundrising-button-list{
+		.wfp-fundrising-button {
+			display: inline-block;
+			background-color: #0564F2;
+			color: #fff;
+			padding: 18px 27px;
+			border-radius: 5px;
+			font-size: 16px;
+			line-height: 19px;
+			font-weight: 500;
+			margin-top: 45px;
+			margin-left: 10px;
+			.wfp-fundrising-icon {
+				font-size: 10px;
+				margin-left: 10px;
+			}
+			&:first-child {
+				margin-left: 0;
+			}
+		}
+	}
+	
+
+	// navigation
+	.wfp_fundrising-slidenav {
+		position: absolute;
+		top: 50%;
+		z-index: 9;
+		font-size: 35px;
+		left: 0;
+		&-next{
+			right: 0;
+			left: inherit
+		}
+	}
+
+	// dots
+	.swiper-pagination-bullet {
+		width: 20px;
+		height: 20px;
+		display: inline-block;
+		-webkit-border-radius: 50%;
+		border-radius: 50%;
+		background-color: #ccc;
+		opacity: 1;
+		box-shadow: 0 0 0 2px transparent;
+		border: 6px solid #fff;
+		margin: 0 2px;
+		&-active{
+			background-color: #425AF8;
+			box-shadow: 0 0 0 2px #425AF8;
+		}
+	}
+	
+}
+.wfp-campaign-filter-nav {
+	text-align: center;
+	ul{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	.wfp-campaign-filter-nav-item{
+		display: inline-block;
+		font-size: 20px;
+		margin: 15px 10px;
+		color: #111;
+		cursor: pointer;
+		&.active {
+			color: #324aff
+		}
+	}
+}

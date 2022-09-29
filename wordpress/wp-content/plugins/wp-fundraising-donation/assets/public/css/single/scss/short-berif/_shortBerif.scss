@@ -1,0 +1,22 @@
+.wfp-excerpt-section {}
+
+.wfp-short-berif-title {
+    color: #3a3a3a;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 22px;
+    line-height: 23px;
+}
+
+.wfp-post-excerpt {
+    >p {
+        margin-bottom: 0;
+        color: #3a3a3a;
+        font-size: 16px;
+        line-height: 23px;
+        font-weight: 400;
+    }
+    .read-more{
+        display: none;
+    }
+}

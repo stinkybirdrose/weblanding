@@ -1,0 +1,27 @@
+.wfp-post-description {
+    padding-right: 45px;
+
+    >p {
+        color: #3a3a3a;
+        font-size: 16px;
+        clear: both;
+        margin-bottom: 40px;
+        line-height: 23px;
+    }
+
+    >.wp-caption {
+        margin-bottom: 40px;
+    }
+
+    h2 {
+        color: #3a3a3a;
+        font-size: 18px;
+        margin: 0;
+        margin-bottom: 20px;
+        font-weight: 700;
+    }
+}
+.wfp-single-tabs,
+.wfp-single-pledges{
+    box-sizing: border-box;
+}

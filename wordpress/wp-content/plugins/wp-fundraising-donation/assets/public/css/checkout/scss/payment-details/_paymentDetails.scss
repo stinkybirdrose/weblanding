@@ -1,0 +1,19 @@
+.wfp-order-payment-section {
+    margin-bottom: 20px;
+}
+
+.wfp-payment-method-title {
+    color: #1a1a1a;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    &:before {
+        display: none;
+    }
+}
+
+.submit-form-checkout {
+    >.xs-btn {
+        border-radius: 0px;
+    }
+}
